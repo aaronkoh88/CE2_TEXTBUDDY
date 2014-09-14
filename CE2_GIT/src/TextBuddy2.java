@@ -127,9 +127,6 @@ public class TextBuddy2 {
 			list.clear();
 			saveToFile();	
 		}
-		
-		 fileW = new FileWriter(newFile);
-		fileW.close();
 		return String.format(MESSAGE_CLEAR, inputName);
 	}
 	
@@ -230,12 +227,7 @@ public class TextBuddy2 {
 		//throw an error if the command is not recognized
 				throw new Error("Unrecognized command type");
 		}
-	/*
-	 * ==============NOTE TO STUDENTS======================================
-	 * If the rest of the program is correct, this error will never be thrown.
-	 * That is why we use an Error instead of an Exception.
-	 * ====================================================================
-	 */
+
 }
 	private static String getFirstWord(String userCommand) {
 	String commandTypeString = userCommand.trim().split("\\s+")[0];
