@@ -39,7 +39,7 @@ public class TextBuddy2 {
 	private static final String MESSAGE_WELCOME_GREETING = "Welcome to TextBuddy. %1$s is ready for use";
 	private static final String MESSAGE_INVALID_FORMAT = "%1$s is an invalid command";
 	private static final String MESSAGE_INVALID_DELETE="invalid delete operation";
-	private static final String MESSAGE_ADD = "added to %1$s \"%2$s\"";
+	private static final String MESSAGE_ADD = "added to %1$s: \"%2$s\"";
 	private static final String MESSAGE_DELETE = "deleted from %1$s \"%2$s\"";
 	private static final String MESSAGE_CLEAR = "all content deleted from %1$s";
 	
@@ -58,6 +58,7 @@ public class TextBuddy2 {
 			String userCommand = sc.nextLine();
 			String feedback = executeCommand(userCommand);
 			showToUser(feedback);
+			printCommand();
 		}
 	}
 	
