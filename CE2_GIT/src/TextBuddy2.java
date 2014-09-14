@@ -117,9 +117,6 @@ public class TextBuddy2 {
 		}
 		else{
 			    printList();
-			//for(int index=0;index<list.size();index++){
-				//System.out.println((index+INDEX_OFFSET)+". "+list.get(index).getInput());
-			//}
 		}
 	}
 	
@@ -131,7 +128,7 @@ public class TextBuddy2 {
 			saveToFile();	
 		}
 		
-		fileW = new FileWriter(newFile);
+		 fileW = new FileWriter(newFile);
 		fileW.close();
 		return String.format(MESSAGE_CLEAR, inputName);
 	}
